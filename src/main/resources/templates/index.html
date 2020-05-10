@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Corona Virus Tracker</title>
+<!-- MDB icon -->
+<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<!-- Google Fonts Roboto -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Material Design Bootstrap -->
+<link rel="stylesheet" href="css/mdb.min.css">
+<!-- Your custom styles (optional) -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_cards.css">
+</head>
+<body>
+
+	<!--Navbar-->
+	<nav
+		class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+
+		<!-- Navbar brand -->
+		<a class="navbar-brand" href="#">Corona Virus Tracker</a>
+
+		<!-- Collapse button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#basicExampleNav" aria-controls="basicExampleNav"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Collapsible content -->
+		<div class="collapse navbar-collapse" id="basicExampleNav">
+
+			<!-- Links -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="#">Home
+						<span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Statics</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
+			</ul>
+			<!-- Links -->
+
+			<form class="form-inline">
+				<div class="md-form my-0">
+					<input class="form-control mr-sm-2" type="text"
+						placeholder="Search" aria-label="Search">
+				</div>
+			</form>
+		</div>
+		<!-- Collapsible content -->
+
+	</nav>
+	<!--/.Navbar-->
+
+	<!--Carousel Wrapper-->
+	<div id="carousel-example-1" class="carousel slide carousel-fade"
+		data-ride="carousel" data-interval="false">
+
+		<!--Indicators-->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-1" data-slide-to="0"
+				class="active"></li>
+			<li data-target="#carousel-example-1" data-slide-to="1"></li>
+			<li data-target="#carousel-example-1" data-slide-to="2"></li>
+		</ol>
+		<!--/.Indicators-->
+
+		<!--Slides-->
+		<div class="carousel-inner" role="listbox">
+
+			<!--First slide-->
+			<div class="carousel-item active">
+				<!--Mask-->
+				<div class="view">
+					<div
+						class="full-bg-img flex-center mask rgba-indigo-light white-text">
+						<ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+							<li>
+								<h1 class="font-weight-bold text-uppercase">Stay Indoors!
+									Stay Safe!</h1>
+							</li>
+							<li>
+								<p class="font-weight-bold text-uppercase py-4">We need to
+									your help in protecting you and Others.</p>
+							</li>
+							<li class="list-inline-item"><a target="_blank"
+								href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf"
+								class="btn btn-unique btn-lg btn-rounded mr-0">Need Help?</a></li>
+							<li class="list-inline-item"><a target="_blank"
+								href="https://www.mygov.in/covid-19/"
+								class="btn btn-cyan btn-lg btn-rounded ml-0">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--/.Mask-->
+			</div>
+			<!--/.First slide-->
+
+			<!--Second slide -->
+			<div class="carousel-item">
+				<!--Mask-->
+				<div class="view">
+					<div
+						class="full-bg-img flex-center mask rgba-purple-light white-text">
+						<ul class="animated fadeInUp col-md-12 list-unstyled">
+							<li>
+								<h1 class="font-weight-bold text-uppercase">Wash your hands
+									for at least 20 seconds.</h1>
+							</li>
+							<li>
+								<p class="font-weight-bold text-uppercase py-4">AIf you're
+									unable to use Soap, use Sanitizer instead.</p>
+							</li>
+							<li><a target="_blank"
+								href="https://www.mohfw.gov.in/pdf/ProtectivemeasuresEng.pdf"
+								class="btn btn-primary btn-rounded btn-lg">Start Safe!</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--/.Mask-->
+			</div>
+			<!--/.Second slide -->
+
+			<!--Third slide-->
+			<div class="carousel-item">
+				<!--Mask-->
+				<div class="view">
+					<div
+						class="full-bg-img flex-center mask rgba-blue-light white-text">
+						<ul class="animated fadeInUp col-md-12 list-unstyled">
+							<li>
+								<h1 class="font-weight-bold text-uppercase">Stay protected
+									stay safe.</h1>
+							</li>
+							<li>
+								<p class="font-weight-bold text-uppercase py-4">We request
+									you to Support the lockdown to help us to keep you safe.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--/.Mask-->
+			</div>
+			<!--/.Third slide-->
+
+		</div>
+		<!--/.Slides-->
+
+		<!--Controls-->
+		<a class="carousel-control-prev" href="#carousel-example-1"
+			role="button" data-slide="prev"> <span
+			class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+			class="sr-only">Previous</span>
+		</a> <a class="carousel-control-next" href="#carousel-example-1"
+			role="button" data-slide="next"> <span
+			class="carousel-control-next-icon" aria-hidden="true"></span> <span
+			class="sr-only">Next</span>
+		</a>
+		<!--/.Controls-->
+	</div>
+	<!--/.Carousel Wrapper-->
+	<main>
+		<div class="wrapper">
+			<h1>Global Statics country and State wise.</h1>
+			<div class="cols">
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div class="front"
+							style="background-image: url(https://unsplash.it/500/500/)">
+							<div class="inner">
+								<p>World Confirmed</p>
+								<span data-th-text="${confirmed}"></span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Worldwide confirmed COVID-19 cases.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div class="front"
+							style="background-image: url(https://unsplash.it/501/501/)">
+							<div class="inner">
+								<p>World Death</p>
+								<span data-th-text="${countDeath}"></span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Worldwide Death cases COVID -19.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div class="front"
+							style="background-image: url(https://unsplash.it/508/508/)">
+							<div class="inner">
+								<p>World Recovered</p>
+								<span th:text="${totalrecovered}"></span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Total worldWide recovered cases COVID-19.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Data Card section ends here -->
+		<div class="container-fluid">
+			<ul class="nav nav-tabs" id="dataTableTabs" role="tablist">
+				<li class="nav-item"><a class="nav-link active" id="confirmed-tab"
+					data-toggle="tab" href="#confirmed" role="tab" aria-controls="home"
+					aria-selected="true">Confirmed Cases Data</a></li>
+				<li class="nav-item"><a class="nav-link" id="death-data-tab"
+					data-toggle="tab" href="#deathData" role="tab"
+					aria-controls="profile" aria-selected="false">Death Cases Data</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" id="contact-tab"
+					data-toggle="tab" href="#contact" role="tab"
+					aria-controls="contact" aria-selected="false">Recovered Cases
+						Data</a></li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="confirmed" role="tabpanel"
+					aria-labelledby="confirmed-tab">
+					<div class="table-responsive">
+						<table id="dtBasicExample" class="table" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<td>Province/State</td>
+									<td>Country/Region</td>
+									<td>Confirmed Cases</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each=" confirmedCase: ${confirmedData}">
+									<td th:text="${confirmedCase.Province_State}"></td>
+									<td th:text="${confirmedCase.Country_Region}"></td>
+									<td th:text="${confirmedCase.confirmedCases}"></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>Province/State</td>
+									<td>Country/Region</td>
+									<td>Confirmed Cases</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="deathData" role="tabpanel"
+					aria-labelledby="death-data-tab">
+					<div class="table-responsive">
+						<table id="dtdeath" class="table display compact" width="100%">
+							<thead>
+								<tr>
+									<td>Province/State</td>
+									<td>Country/Region</td>
+									<td>Death Cases</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each=" death: ${deathData}">
+									<td th:text="${death.Province_State}"></td>
+									<td th:text="${death.Country_Region}"></td>
+									<td th:text="${death.deathCases}"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="contact" role="tabpanel"
+					aria-labelledby="contact-tab">
+					<div class="table-responsive">
+						<table id="dtrecovered" class="table display compact" width="100%">
+							<thead>
+								<tr>
+									<td>Province/State</td>
+									<td>Country/Region</td>
+									<td>Recovered Cases</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each=" recovered: ${recoveredData}">
+									<td th:text="${recovered.Province_State}"></td>
+									<td th:text="${recovered.Country_Region}"></td>
+									<td th:text="${recovered.recoveredCases}"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!--Footer-->
+	<footer class="page-footer text-center text-md-left pt-4">
+		<!--Footer Links-->
+		<div class="container-fluid">
+			<div class="row">
+				<!--First column-->
+				<div class="col-md-3 offset-md-1">
+					<h5 class="font-weight-bold text-uppercase mb-4">About this
+						Application.</h5>
+					<p>Corona virus Global Tracker is being developed and
+						maintained by Amit Mishra.</p>
+					<p>A helpful application to represent the raw from the global
+						data server maintained and updated by Authorities.</p>
+				</div>
+				<!--/.First column-->
+				<hr class="clearfix w-100 d-md-none">
+				<!--Second column-->
+				<div class="col-md-2 offset-md-1"></div>
+				<!--/.Fourth column-->
+			</div>
+		</div>
+		<!--/.Footer Links-->
+		<!--Copyright-->
+		<div class="footer-copyright text-center">
+			<div class="container-fluid py-3">
+				© 2020 Copyright: <a href="https://mdbootstrap.com">Corona Virus
+					Global Tracker. </a>
+			</div>
+		</div>
+		<!--/.Copyright-->
+	</footer>
+	<!--/.Footer-->
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<!-- Your custom scripts (optional) -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- DataTables CSS -->
+	<link href="css/addons/datatables.min.css" rel="stylesheet">
+	<!-- Charts js libraries -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<!-- DataTables JS -->
+	<script src="js/addons/datatables.min.js" type="text/javascript"></script>
+
+	<!-- DataTables Select CSS -->
+	<link href="css/addons/datatables-select.min.css" rel="stylesheet">
+	<!-- DataTables Select JS -->
+	<script src="js/addons/datatables-select.min.js" type="text/javascript"></script>
+</body>
+</html>

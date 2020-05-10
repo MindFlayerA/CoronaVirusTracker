@@ -1,0 +1,148 @@
+/* Navigation*/
+.navbar {
+	background-color: transparent;
+}
+
+.scrolling-navbar {
+	transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+	background-color: #667490;
+}
+
+footer.page-footer {
+	background-color: #667490;
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		background-color: #667490;
+	}
+}
+
+/* Necessary for full page carousel*/
+html, body, .view {
+	height: 100%;
+}
+
+/* Carousel*/
+.carousel, .carousel-item, .carousel-item.active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+	background-image:
+		url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+	background-image:
+		url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/30.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+	background-image:
+		url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(10).jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.wrapper {
+	height: 420px;
+	width: 954px;
+	margin: 50px auto;
+	border-radius: 7px 7px 7px 7px;
+	background: white;
+}
+
+.title-text-info {
+	margin: 0 0 0 38px;
+	padding-top: 52px;
+	font-size: 34px;
+	color: #474747;
+	float: left;
+}
+
+.app body {
+	background: #353445;
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#myTabContent{
+	padding:40px 40px 40px 40x;
+	border:1px sold black;
+	height:620px;
+	width: 954px;
+	border-radius: 7px 7px 7px 7px;
+}
+
+.app {
+	box-sizing: border-box;
+	display: grid;
+	height: 100vh;
+}
+
+.chart {
+	margin: auto;
+	height: 300px;
+	display: flex;
+}
+
+.plot {
+	display: grid;
+	grid-gap: 0.75rem;
+	align-items: end;
+}
+
+.bar {
+	background: linear-gradient(to top, #ff4560 100px, #feb019 200px, #00e396 300px);
+	border-radius: 1rem 1rem 0 0;
+	animation: loadY 1s;
+	transform-origin: bottom center;
+}
+
+@
+keyframes loadY { 0% {
+	transform: rotateX(-90deg);
+}
+
+}
+.x-axis {
+	grid-row-start: 2;
+	font-size: 0.75rem;
+	display: contents;
+}
+
+.x-label {
+	display: inline-flex;
+	writing-mode: sideways-lr;
+	white-space: nowrap;
+	transform-origin: top center;
+	transform: rotate(45deg);
+	height: 120px;
+	justify-content: end;
+}
+
+.y-axis {
+	display: grid;
+	margin-right: 1rem;
+	height: 100%;
+	grid-template-rows: repeat(10, minmax(0, 1fr));
+	text-align: right;
+	font-size: 0.75rem;
+	line-height: 1;
+}

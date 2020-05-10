@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Document</title>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--Import materialize.css-->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Compiled and minified JavaScript -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Font awesome CSS files -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<!-- Custom JS -->
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<h2>Total Data</h2>
+	<table class="responsive-table highlight">
+		<tr>
+			<td>State</td>
+			<td>Country/Region</td>
+			<td>Total Confirmed Cases</td>
+			<td>Recovered</td>
+			<td>Deaths</td>
+			<td>Last Update</td>
+		</tr>
+		<tr th:each="data:${infectedData}">
+			<td th:text="${data.state}"></td>
+			<td th:text="${data.countryRegion}"></td>
+			<td th:text="${data.confirmed}"></td>
+			<td th:text="${data.deaths}"></td>
+			<td th:text="${data.recovered}"></td>
+			<td th:text="${data.lastUpdate}"></td>
+		</tr>
+	</table>
+
+</body>
+</html>
