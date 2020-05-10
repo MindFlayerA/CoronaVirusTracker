@@ -16,11 +16,17 @@
 	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--ZingChart JS library. -->
+<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
 <!-- Material Design Bootstrap -->
 <link rel="stylesheet" href="css/mdb.min.css">
 <!-- Your custom styles (optional) -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/style_cards.css">
+<!-- DataTables CSS -->
+<link href="css/addons/datatables.min.css" rel="stylesheet">
+<!-- DataTables Select CSS -->
+<link href="css/addons/datatables-select.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -225,11 +231,12 @@
 			</div>
 		</div>
 		<!-- Data Card section ends here -->
-		<div class="container-fluid">
+		<div class="container">
+			<h1>Tabular form country specific</h1>
 			<ul class="nav nav-tabs" id="dataTableTabs" role="tablist">
-				<li class="nav-item"><a class="nav-link active" id="confirmed-tab"
-					data-toggle="tab" href="#confirmed" role="tab" aria-controls="home"
-					aria-selected="true">Confirmed Cases Data</a></li>
+				<li class="nav-item"><a class="nav-link active"
+					id="confirmed-tab" data-toggle="tab" href="#confirmed" role="tab"
+					aria-controls="home" aria-selected="true">Confirmed Cases Data</a></li>
 				<li class="nav-item"><a class="nav-link" id="death-data-tab"
 					data-toggle="tab" href="#deathData" role="tab"
 					aria-controls="profile" aria-selected="false">Death Cases Data</a>
@@ -240,10 +247,11 @@
 						Data</a></li>
 			</ul>
 			<div class="tab-content" id="myTabContent">
-				<div class="tab-pane fade show active" id="confirmed" role="tabpanel"
-					aria-labelledby="confirmed-tab">
+				<div class="tab-pane fade show active" id="confirmed"
+					role="tabpanel" aria-labelledby="confirmed-tab">
 					<div class="table-responsive">
-						<table id="dtBasicExample" class="table" cellspacing="0" width="100%">
+						<table id="dtBasicExample" class="table" cellspacing="0"
+							width="100%">
 							<thead>
 								<tr>
 									<td>Province/State</td>
@@ -312,6 +320,26 @@
 				</div>
 			</div>
 		</div>
+		<hr class="my-4">
+		<!-- Chart and graph visualization wrapper-->
+		<div class="chart-section" id="chart-wrapper">
+			<div class="row" id="graph1">
+				<div class="col-md-6 sm-12">
+					<div class="card 6-2">
+						<div class="chart-content" id="worldPie">
+						<!-- Pie Chart World data -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 sm-12">
+					<div class="card 6-2">
+						<div class="chart-content" id="worldGraphical">
+						<!-- Pie Chart World data -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<!--Footer-->
@@ -355,18 +383,19 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<script>
+		var countDeathValue=[[${countDeath}]];
+		var countConfirmedValue=[[${confirmed}]];
+		var countRecoveredValue=[[${totalrecovered}]];
+		
+	</script>
+	<script src="js/requests.js"></script>
+	<!-- ChartJS Custom JS file -->
+	<script type="text/javascript" src="js/chart.js"></script>
 	<!-- Your custom scripts (optional) -->
 	<script type="text/javascript" src="js/script.js"></script>
-	<!-- DataTables CSS -->
-	<link href="css/addons/datatables.min.css" rel="stylesheet">
-	<!-- Charts js libraries -->
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 	<!-- DataTables JS -->
 	<script src="js/addons/datatables.min.js" type="text/javascript"></script>
-
-	<!-- DataTables Select CSS -->
-	<link href="css/addons/datatables-select.min.css" rel="stylesheet">
 	<!-- DataTables Select JS -->
 	<script src="js/addons/datatables-select.min.js" type="text/javascript"></script>
 </body>

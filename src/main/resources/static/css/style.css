@@ -19,6 +19,10 @@ footer.page-footer {
 	.navbar {
 		background-color: #667490;
 	}
+	
+	.sm-12{
+		padding-top:20px;
+	}
 }
 
 /* Necessary for full page carousel*/
@@ -85,8 +89,7 @@ html, body, .view {
 #myTabContent{
 	padding:40px 40px 40px 40x;
 	border:1px sold black;
-	height:620px;
-	width: 954px;
+	height:auto;
 	border-radius: 7px 7px 7px 7px;
 }
 
@@ -145,4 +148,10 @@ keyframes loadY { 0% {
 	text-align: right;
 	font-size: 0.75rem;
 	line-height: 1;
+}
+
+#chart-wrapper{
+	width:100%;
+	height:auto;
+	padding:20px;
 }

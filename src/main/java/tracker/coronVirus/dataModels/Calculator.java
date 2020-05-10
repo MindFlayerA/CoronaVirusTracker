@@ -8,6 +8,9 @@ import org.springframework.ui.Model;
 
 @Service
 public class Calculator<T> implements Comparator<Object> {
+	
+	public Calculator() {
+	}
 
 	private static int countDeath = 0;
 	private static int confirmed = 0;

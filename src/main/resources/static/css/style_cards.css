@@ -188,3 +188,20 @@ h1{
     margin: 0 0 2rem 0;
   }
 }
+
+.card {
+  box-shadow: 0 10px 14px 0 rgba(0,0,0,0.6);
+  transition: 0.8s;
+  border-radius: 5px; /* 5px rounded corners */
+ 
+}
+
+.card.\36 -2{
+	height:400px;
+	width:auto;
+}
+.chart-content{
+	background:#2B313B;
+	height:100%;
+}
+
